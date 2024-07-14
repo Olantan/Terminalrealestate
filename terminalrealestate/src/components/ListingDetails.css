@@ -1,0 +1,15 @@
+/* src/components/ListingDetails.css */
+.listing-details {
+    padding: 20px;
+  }
+  
+  .listing-details h1 {
+    margin-bottom: 10px;
+  }
+  
+  .listing-details p {
+    margin-bottom: 8px;
+  }
+  
+  /* Add more styles as needed */
+  
