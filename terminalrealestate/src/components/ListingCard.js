@@ -3,10 +3,6 @@ import React from 'react';
 import './ListingCard.css';
 
 const ListingCard = ({ image, title, price }) => {
-  if (!image || !title || !price) {
-    return <div className="listing-card">Loading...</div>;
-  }
-
   return (
     <div className="listing-card">
       <img src={image} alt={title} />
@@ -17,4 +13,6 @@ const ListingCard = ({ image, title, price }) => {
 };
 
 export default ListingCard;
+
+
 
