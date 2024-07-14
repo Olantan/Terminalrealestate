@@ -2,17 +2,19 @@
 import React from 'react';
 import './ListingCard.css';
 
-const ListingCard = ({ listing }) => {
+const ListingCard = ({ image, title, price }) => {
+  if (!image || !title || !price) {
+    return <div className="listing-card">Loading...</div>;
+  }
+
   return (
     <div className="listing-card">
-      <img src={listing.image} alt={listing.title} />
-      <div className="listing-details">
-        <h2>{listing.title}</h2>
-        <p>{listing.description}</p>
-        <p><strong>Price:</strong> ${listing.price}</p>
-      </div>
+      <img src={image} alt={title} />
+      <h2>{title}</h2>
+      <p>{price}</p>
     </div>
   );
 };
 
 export default ListingCard;
+
